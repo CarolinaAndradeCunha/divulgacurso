@@ -110,7 +110,7 @@
 
   <footer id="contato">
     <p>Quer saber mais? <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Fale conosco no WhatsApp</a></p>
-    <p>© 2025 Seu Nome | Todos os direitos reservados</p>
+    <p>© 2025 Glam | Todos os direitos reservados</p>
   </footer>
 
   <!-- Botão WhatsApp fixo -->
