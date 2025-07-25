@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f6f2; /* bege clarinho */
+  color: #5a4b3c; /* marrom escuro suave */
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== HEADER / HERO ===== */
+header {
+  height: 90vh;
+  background-color: #ffffff; /* branco */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #5a4b3c;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin-bottom: 35px;
+  color: #7a6c5a;
+}
+
+header .btn {
+  background-color: #a67c52;
+  color: #fff;
+  font-weight: 700;
+  padding: 18px 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(166, 124, 82, 0.35);
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .btn:hover {
+  background-color: #8a653f;
+  box-shadow: 0 6px 15px rgba(138, 101, 63, 0.55);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== SOBRE ===== */
+section.sobre {
+  background-color: #ffffff; /* branco */
+  padding: 60px 20px;
+  text-align: center;
+  color: #5a4b3c;
+}
+
+section.sobre h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a67c52; /* marrom queimado */
+  margin-bottom: 20px;
+}
+
+section.sobre p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #7a6c5a;
+}
+
+/* ===== CURSOS (CARDS) ===== */
+section.cursos {
+  background-color: #f9f6f2; /* bege clarinho */
+  padding: 60px 20px;
+  text-align: center;
+  color: #5a4b3c;
+}
+
+section.cursos h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 40px;
+}
+
+.cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(166, 124, 82, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(166, 124, 82, 0.35);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7a6c5a;
+  margin-bottom: 20px;
+}
+
+.card .btn-card {
+  background-color: #a67c52;
+  color: white;
+  font-weight: 700;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-card:hover {
+  background-color: #8a653f;
+}
+
+/* ===== Módulos ===== */
+section.modulos {
+  background-color: #fff;
+  padding: 60px 20px;
+  color: #5a4b3c;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+section.modulos h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 40px;
+}
+.modulos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+.modulo {
+  background-color: #f9f6f2;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 5px 15px rgba(166,124,82,0.1);
+  transition: box-shadow 0.3s ease;
+}
+.modulo:hover {
+  box-shadow: 0 8px 25px rgba(166,124,82,0.25);
+  cursor: default;
+}
+.modulo h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #a67c52;
+}
+.modulo p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #7a6c5a;
+}
+
+/* ===== Para Quem ===== */
+section.publico {
+  background-color: #f9f6f2;
+  padding: 60px 20px;
+  color: #5a4b3c;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+section.publico h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 30px;
+}
+section.publico ul {
+  list-style: none;
+  padding-left: 0;
+}
+section.publico ul li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+  color: #7a6c5a;
+}
+section.publico ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #a67c52;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* ===== Preços ===== */
+section.precos {
+  background-color: #fff;
+  padding: 60px 20px;
+  color: #5a4b3c;
+  max-width: 1000px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+section.precos h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 40px;
+}
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.plano {
+  background-color: #f9f6f2;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 25px rgba(166,124,82,0.15);
+  max-width: 320px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+.plano:hover {
+  box-shadow: 0 12px 40px rgba(166,124,82,0.3);
+}
+.plano h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 15px;
+}
+.plano .valor {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5a4b3c;
+  margin-bottom: 30px;
+}
+.plano .btn-card {
+  background-color: #a67c52;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.plano .btn-card:hover {
+  background-color: #8a653f;
+}
+
+/* ===== FAQ ===== */
+section.faq {
+  background-color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 100px auto;
+  padding: 60px 20px;
+  color: #5a4b3c;
+}
+
+section.faq h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 30px;
+}
+
+details {
+  background-color: #f9f6f2;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(166, 124, 82, 0.1);
+  cursor: pointer;
+}
+
+summary {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #7a6c5a;
+  outline: none;
+}
+
+details[open] summary {
+  color: #a67c52;
+}
+
+details p {
+  margin-top: 10px;
+  font-weight: 400;
+  color: #7a6c5a;
+  font-size: 1rem;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #a67c52;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===== BOTÃO WHATSAPP ===== */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #5a4b3c;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(90, 75, 60, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-fixo:hover {
+  background-color: #453b2f;
+}
+
+.whatsapp-fixo svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+  header p {
+    font-size: 1.1rem;
+  }
+  .card h3 {
+    font-size: 1.4rem;
+  }
+  .card p {
+    font-size: 0.95rem;
+  }
+  header .btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 700px) {
+  .planos {
+    flex-direction: column;
+    gap: 30px;
+  }
+  section.modulos .modulos-lista {
+    grid-template-columns: 1fr;
+  }
+}
